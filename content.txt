@@ -1,0 +1,492 @@
+
+    <div id="header">
+      <div id="blog_site_nav">
+  <a href="http://www.iteye.com/" class="homepage">首页</a>
+  <a href="http://www.iteye.com/news">资讯</a>
+  <a href="http://www.iteye.com/magazines">精华</a>
+  <a href="http://www.iteye.com/forums">论坛</a>
+  <a href="http://www.iteye.com/ask">问答</a>
+  <a href="http://www.iteye.com/blogs">博客</a>
+  <a href="http://www.iteye.com/blogs/subjects">专栏</a>
+  <a href="http://www.iteye.com/groups">群组</a>
+  <a href="#" onclick="return false;" id="msna"><u>更多</u> <small>▼</small></a>
+  <div class="quick_menu" style="display:none;">
+    <a target="_blank" href="http://job.iteye.com/iteye">招聘</a>
+    <a href="http://www.iteye.com/search">搜索</a>
+  </div>
+</div>
+
+      <div id="user_nav">
+  
+        <a href="http://qiuyibo7777.iteye.com" title="查看我的博客首页" class="welcome">欢迎qiuyibo7777</a>
+    <a title="没有未读消息" class="" id="notifications_count" href="http://my.iteye.com/notifications">0</a>
+    
+      <a href="http://my.iteye.com/messages" title="你有新的站内短信"><img alt="Newpm" src="http://www.iteye.com/images/newpm.gif?1324994303">收件箱(2)</a>
+    
+    <a href="http://my.iteye.com" title="我的应用首页">我的应用</a>
+    <div class="quick_menu" style="display:none;">
+      <a href="http://my.iteye.com/feed" title="我关注的好友动态消息">我的关注</a>
+      <a href="http://my.iteye.com/mygroup" title="我加入的群组最新话题">我的群组</a>
+      <a href="http://my.iteye.com/myresume" title="我的个人简历">我的简历</a>
+      <a href="http://my.iteye.com/admin/album" title="我的个人简历">我的相册</a>
+      <a href="http://my.iteye.com/admin/link" title="我收藏的网络资源链接">我的收藏</a>
+      <a href="http://my.iteye.com/admin/code" title="我收藏的代码">我的代码</a>
+      <a href="http://my.iteye.com/admin/weibo" title="用微博发表简短的话题">我的微博</a>
+    </div>
+    <a href="http://qiuyibo7777.iteye.com/admin" title="管理我的博客">我的博客</a>
+    <a href="http://my.iteye.com/profile" title="修改我的个人设置">设置</a>
+    <a href="/logout" class="nobg" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'put'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'C4cvhO4+b041LH+bWrLISlKA1ndKSxR1OLlVkbuhUUM='); f.appendChild(s);f.submit();return false;">退出</a>
+  </div>
+
+    </div>
+
+    <div id="page">
+      <div id="branding" class="clearfix">
+        <div id="blog_name">
+          <h1><a href="/">leihongtai2010</a></h1>
+        </div>
+        <div id="fd"></div>
+        <div id="blog_navbar">
+          <ul>
+            <li class="blog_navbar_for"><a href="http://leihongtai2010.iteye.com"><strong>博客</strong></a></li>
+            <li><a href="/weibo">微博</a></li>
+            <li><a href="/album">相册</a></li>
+            <li><a href="/link">收藏</a></li>
+            <li><a href="/blog/guest_book">留言</a></li>
+            <li><a href="/blog/profile">关于我</a></li>
+          </ul>
+    
+          <div class="search">
+            <form action="/blog/search" method="get">
+              <input class="search_text" id="query" name="query" style="margin-left: 10px;width: 110px;" value="" type="text">
+              <input class="submit_search" value="" type="submit">
+            </form>
+          </div> 
+          <div id="fd"></div>         
+        </div>
+      </div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+          
+
+
+
+          
+
+
+<div class="h-entry" style="display:none">
+  <a href="http://leihongtai2010.iteye.com" class="p-author" target="_blank">leihongtai2010</a>
+</div>
+
+
+<div class="blog_main">
+  <div class="blog_title">
+    <h3>
+      <a href="/blog/2256287">冒泡排序算法实现与分析</a>
+      <em class="actions">      </em>
+    </h3>
+    <ul class="blog_categories"><strong>博客分类：</strong> <li><a href="/category/349092">数据结构与算法</a></li> </ul>
+        <div class="news_tag"><a href="http://www.iteye.com/blogs/tag/%E7%AE%97%E6%B3%95">算法</a><a href="http://www.iteye.com/blogs/tag/java">java</a><a href="http://www.iteye.com/blogs/tag/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">冒泡排序</a>&nbsp;</div>
+  </div>
+
+  <div id="blog_content" class="blog_content">
+    
+<br>基本思想：
+<br>&nbsp;&nbsp;&nbsp; 从第0个数据开始，将其与后面的每一个数据比较，如果比其大则调整两个的位置直到最后一个。即：每当两相邻的数比较后发现它们的排序与排序要求相反时，就将它们互换。
+<br>
+<br>图示：
+<br>&nbsp;&nbsp;&nbsp; <img src="http://dl2.iteye.com/upload/attachment/0113/0205/7e345e52-bceb-36a4-8b98-10043a814d40.png">
+<br>
+<br>
+<br>JAVA代码具体实现
+<br><div id="" class="dp-highlighter"><div class="bar"><div class="tools">Java代码 <embed wmode="transparent" src="/javascripts/syntaxhighlighter/clipboard_new.swf" flashvars="clipboard=package%20com.leiht.sort%3B%0A%0A%2F**%0A%20*%20%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95JAVA%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%0A%20*%20%0A%20*%20%40author%20Leiht%0A%20*%20%40date%202015-11-11%0A%20*%2F%0Apublic%20class%20SortBubble%20%7B%0A%0A%09public%20static%20void%20main(String%5B%5D%20args)%20%7B%0A%0A%09%09int%5B%5D%20numbersUp%20%3D%20%7B%2056%2C%2045%2C%2078%2C%2067%2C%2099%2C%2013%2C%2034%2C%2049%2C%2055%2C%2034%2C%2012%2C%2077%2C%201%20%7D%3B%0A%09%09int%5B%5D%20numbersDown%20%3D%20%7B%2056%2C%2045%2C%2078%2C%2067%2C%2099%2C%2013%2C%2034%2C%2049%2C%2055%2C%2034%2C%2012%2C%2077%2C%201%20%7D%3B%0A%09%09SortBubble%20sort%20%3D%20new%20SortBubble()%3B%0A%09%09%0A%09%09%2F%2F%E5%90%91%E4%B8%8A%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%0A%09%09sort.sort4Up(numbersUp)%3B%0A%09%09%0A%09%09%2F%2F%E5%90%91%E4%B8%8B%E5%86%92%E6%B3%A1%EF%BC%88%E4%B8%8B%E6%B2%89%EF%BC%89%E6%8E%92%E5%BA%8F%0A%09%09sort.sort4Down(numbersDown)%3B%0A%0A%09%7D%0A%09%0A%09private%20void%20sort4Up(int%5B%5D%20numbers)%20%7B%0A%09%09System.out.println(%22%E6%8E%92%E5%BA%8F%E4%B9%8B%E5%89%8D%EF%BC%9A%22)%3B%0A%09%09for%20(int%20i%20%3D%200%3B%20i%20%3C%20numbers.length%3B%20i%2B%2B)%20%7B%0A%09%09%09System.out.print(numbers%5Bi%5D%20%2B%20%22%20%22)%3B%0A%09%09%7D%0A%0A%09%09%2F%2F%20%E6%8E%92%E5%BA%8F%E4%B8%BB%E4%BD%93%0A%09%09for%20(int%20i%20%3D%200%3B%20i%20%3C%20numbers.length%20-%201%3B%20i%2B%2B)%20%7B%0A%09%09%09%2F%2F%20%E5%B0%86%E7%AC%ACi%E4%B8%AA%E5%85%83%E7%B4%A0%E4%BE%9D%E6%AC%A1%E4%B8%8E%E5%90%8E%E9%9D%A2%E6%89%80%E6%9C%89%E5%85%83%E7%B4%A0%E6%AF%94%E8%BE%83%20%E5%A6%82%E6%9E%9C%E6%AF%94%E5%85%B6%E5%A4%A7%E5%88%99%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E7%9A%84%E4%BD%8D%E7%BD%AE%0A%09%09%09for%20(int%20j%20%3D%20i%20%2B%201%3B%20j%20%3C%20numbers.length%3B%20j%2B%2B)%20%7B%0A%09%09%09%09int%20temp%20%3D%20numbers%5Bi%5D%3B%0A%09%09%09%09if%20(numbers%5Bi%5D%20%3E%20numbers%5Bj%5D)%20%7B%0A%09%09%09%09%09numbers%5Bi%5D%20%3D%20numbers%5Bj%5D%3B%0A%09%09%09%09%09numbers%5Bj%5D%20%3D%20temp%3B%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09System.out.println()%3B%0A%09%09System.out.println(%22%E6%8E%92%E5%BA%8F%E4%B9%8B%E5%90%8E%EF%BC%9A%22)%3B%0A%09%09for%20(int%20i%20%3D%200%3B%20i%20%3C%20numbers.length%3B%20i%2B%2B)%20%7B%0A%09%09%09System.out.print(numbers%5Bi%5D%20%2B%20%22%20%22)%3B%0A%09%09%7D%0A%09%7D%0A%09%0A%09private%20void%20sort4Down(int%5B%5D%20numbers)%20%7B%0A%09%09System.out.println(%22%E6%8E%92%E5%BA%8F%E4%B9%8B%E5%89%8D%EF%BC%9A%22)%3B%0A%09%09for%20(int%20i%20%3D%200%3B%20i%20%3C%20numbers.length%3B%20i%2B%2B)%20%7B%0A%09%09%09System.out.print(numbers%5Bi%5D%20%2B%20%22%20%22)%3B%0A%09%09%7D%0A%09%09%2F%2F%20%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%0A%09%09for%20(int%20i%20%3D%200%3B%20i%20%3C%20numbers.length%3B%20i%2B%2B)%20%7B%0A%09%09%09for%20(int%20j%20%3D%200%3B%20j%20%3C%20numbers.length%20-%20i%20-%201%3B%20j%2B%2B)%20%7B%0A%09%09%09%09%2F%2F%20%E8%BF%99%E9%87%8C-i%E4%B8%BB%E8%A6%81%E6%98%AF%E6%AF%8F%E9%81%8D%E5%8E%86%E4%B8%80%E6%AC%A1%E9%83%BD%E6%8A%8A%E6%9C%80%E5%A4%A7%E7%9A%84i%E4%B8%AA%E6%95%B0%E6%B2%89%E5%88%B0%E6%9C%80%E5%BA%95%E4%B8%8B%E5%8E%BB%E4%BA%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E5%BF%85%E8%A6%81%E5%86%8D%E6%9B%BF%E6%8D%A2%E4%BA%86%0A%09%09%09%09if%20(numbers%5Bj%5D%20%3E%20numbers%5Bj%20%2B%201%5D)%20%7B%0A%09%09%09%09%09int%20temp%20%3D%20numbers%5Bj%5D%3B%0A%09%09%09%09%09numbers%5Bj%5D%20%3D%20numbers%5Bj%20%2B%201%5D%3B%0A%09%09%09%09%09numbers%5Bj%20%2B%201%5D%20%3D%20temp%3B%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%09System.out.println()%3B%0A%09%09System.out.println(%22%E6%8E%92%E5%BA%8F%E4%B9%8B%E5%90%8E%EF%BC%9A%22)%3B%0A%09%09for%20(int%20i%20%3D%200%3B%20i%20%3C%20numbers.length%3B%20i%2B%2B)%20%7B%0A%09%09%09System.out.print(numbers%5Bi%5D%20%2B%20%22%20%22)%3B%0A%09%09%7D%0A%09%09%0A%09%7D%0A%09%0A%7D" quality="high" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" height="15" width="14">&nbsp;<a href="javascript:void()" title="收藏这段代码" onclick="code_favorites_do_favorite(this);return false;"><img class="star" src="/images/icon_star.png" alt="收藏代码"><img class="spinner" src="/images/spinner.gif" style="display:none"></a></div></div><ol class="dp-j" start="1"><li><span><span class="keyword">package</span><span>&nbsp;com.leiht.sort;&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;</span></li><li><span><span class="comment">/**</span>&nbsp;</span></li><li><span><span class="comment">&nbsp;*&nbsp;冒泡排序算法JAVA简单实现</span>&nbsp;</span></li><li><span><span class="comment">&nbsp;*&nbsp;</span>&nbsp;</span></li><li><span><span class="comment">&nbsp;*&nbsp;@author&nbsp;Leiht</span>&nbsp;</span></li><li><span><span class="comment">&nbsp;*&nbsp;@date&nbsp;2015-11-11</span>&nbsp;</span></li><li><span><span class="comment">&nbsp;*/</span><span>&nbsp;&nbsp;</span></span></li><li><span><span class="keyword">public</span><span>&nbsp;</span><span class="keyword">class</span><span>&nbsp;SortBubble&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="keyword">static</span><span>&nbsp;</span><span class="keyword">void</span><span>&nbsp;main(String[]&nbsp;args)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span><span>[]&nbsp;numbersUp&nbsp;=&nbsp;{&nbsp;</span><span class="number">56</span><span>,&nbsp;</span><span class="number">45</span><span>,&nbsp;</span><span class="number">78</span><span>,&nbsp;</span><span class="number">67</span><span>,&nbsp;</span><span class="number">99</span><span>,&nbsp;</span><span class="number">13</span><span>,&nbsp;</span><span class="number">34</span><span>,&nbsp;</span><span class="number">49</span><span>,&nbsp;</span><span class="number">55</span><span>,&nbsp;</span><span class="number">34</span><span>,&nbsp;</span><span class="number">12</span><span>,&nbsp;</span><span class="number">77</span><span>,&nbsp;</span><span class="number">1</span><span>&nbsp;};&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span><span>[]&nbsp;numbersDown&nbsp;=&nbsp;{&nbsp;</span><span class="number">56</span><span>,&nbsp;</span><span class="number">45</span><span>,&nbsp;</span><span class="number">78</span><span>,&nbsp;</span><span class="number">67</span><span>,&nbsp;</span><span class="number">99</span><span>,&nbsp;</span><span class="number">13</span><span>,&nbsp;</span><span class="number">34</span><span>,&nbsp;</span><span class="number">49</span><span>,&nbsp;</span><span class="number">55</span><span>,&nbsp;</span><span class="number">34</span><span>,&nbsp;</span><span class="number">12</span><span>,&nbsp;</span><span class="number">77</span><span>,&nbsp;</span><span class="number">1</span><span>&nbsp;};&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SortBubble&nbsp;sort&nbsp;=&nbsp;<span class="keyword">new</span><span>&nbsp;SortBubble();&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//向上冒泡排序</span><span>&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sort.sort4Up(numbersUp);&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//向下冒泡（下沉）排序</span><span>&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sort.sort4Down(numbersDown);&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">private</span><span>&nbsp;</span><span class="keyword">void</span><span>&nbsp;sort4Up(</span><span class="keyword">int</span><span>[]&nbsp;numbers)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"排序之前："</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;i&nbsp;&lt;&nbsp;numbers.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(numbers[i]&nbsp;+&nbsp;<span class="string">"&nbsp;"</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;排序主体</span><span>&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;i&nbsp;&lt;&nbsp;numbers.length&nbsp;-&nbsp;</span><span class="number">1</span><span>;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;将第i个元素依次与后面所有元素比较&nbsp;如果比其大则交换两个的位置</span><span>&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;j&nbsp;=&nbsp;i&nbsp;+&nbsp;</span><span class="number">1</span><span>;&nbsp;j&nbsp;&lt;&nbsp;numbers.length;&nbsp;j++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span><span>&nbsp;temp&nbsp;=&nbsp;numbers[i];&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(numbers[i]&nbsp;&gt;&nbsp;numbers[j])&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers[i]&nbsp;=&nbsp;numbers[j];&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers[j]&nbsp;=&nbsp;temp;&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println();&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"排序之后："</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;i&nbsp;&lt;&nbsp;numbers.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(numbers[i]&nbsp;+&nbsp;<span class="string">"&nbsp;"</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">private</span><span>&nbsp;</span><span class="keyword">void</span><span>&nbsp;sort4Down(</span><span class="keyword">int</span><span>[]&nbsp;numbers)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"排序之前："</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;i&nbsp;&lt;&nbsp;numbers.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(numbers[i]&nbsp;+&nbsp;<span class="string">"&nbsp;"</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;冒泡排序</span><span>&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;i&nbsp;&lt;&nbsp;numbers.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;j&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;j&nbsp;&lt;&nbsp;numbers.length&nbsp;-&nbsp;i&nbsp;-&nbsp;</span><span class="number">1</span><span>;&nbsp;j++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;这里-i主要是每遍历一次都把最大的i个数沉到最底下去了，没有必要再替换了</span><span>&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(numbers[j]&nbsp;&gt;&nbsp;numbers[j&nbsp;+&nbsp;</span><span class="number">1</span><span>])&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span><span>&nbsp;temp&nbsp;=&nbsp;numbers[j];&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers[j]&nbsp;=&nbsp;numbers[j&nbsp;+&nbsp;<span class="number">1</span><span>];&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers[j&nbsp;+&nbsp;<span class="number">1</span><span>]&nbsp;=&nbsp;temp;&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println();&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"排序之后："</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">int</span><span>&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;&nbsp;i&nbsp;&lt;&nbsp;numbers.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(numbers[i]&nbsp;+&nbsp;<span class="string">"&nbsp;"</span><span>);&nbsp;&nbsp;</span></span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li><span>}&nbsp;&nbsp;</span></li></ol></div><pre title="冒泡排序算法实现与分析" pre_index="0" source_url="http://leihongtai2010.iteye.com/blog/2256287" codeable_type="Blog" codeable_id="2256287" style="display: none;" class="java" name="code">package com.leiht.sort;
+
+/**
+ * 冒泡排序算法JAVA简单实现
+ * 
+ * @author Leiht
+ * @date 2015-11-11
+ */
+public class SortBubble {
+
+	public static void main(String[] args) {
+
+		int[] numbersUp = { 56, 45, 78, 67, 99, 13, 34, 49, 55, 34, 12, 77, 1 };
+		int[] numbersDown = { 56, 45, 78, 67, 99, 13, 34, 49, 55, 34, 12, 77, 1 };
+		SortBubble sort = new SortBubble();
+		
+		//向上冒泡排序
+		sort.sort4Up(numbersUp);
+		
+		//向下冒泡（下沉）排序
+		sort.sort4Down(numbersDown);
+
+	}
+	
+	private void sort4Up(int[] numbers) {
+		System.out.println("排序之前：");
+		for (int i = 0; i &lt; numbers.length; i++) {
+			System.out.print(numbers[i] + " ");
+		}
+
+		// 排序主体
+		for (int i = 0; i &lt; numbers.length - 1; i++) {
+			// 将第i个元素依次与后面所有元素比较 如果比其大则交换两个的位置
+			for (int j = i + 1; j &lt; numbers.length; j++) {
+				int temp = numbers[i];
+				if (numbers[i] &gt; numbers[j]) {
+					numbers[i] = numbers[j];
+					numbers[j] = temp;
+				}
+			}
+		}
+
+		System.out.println();
+		System.out.println("排序之后：");
+		for (int i = 0; i &lt; numbers.length; i++) {
+			System.out.print(numbers[i] + " ");
+		}
+	}
+	
+	private void sort4Down(int[] numbers) {
+		System.out.println("排序之前：");
+		for (int i = 0; i &lt; numbers.length; i++) {
+			System.out.print(numbers[i] + " ");
+		}
+		// 冒泡排序
+		for (int i = 0; i &lt; numbers.length; i++) {
+			for (int j = 0; j &lt; numbers.length - i - 1; j++) {
+				// 这里-i主要是每遍历一次都把最大的i个数沉到最底下去了，没有必要再替换了
+				if (numbers[j] &gt; numbers[j + 1]) {
+					int temp = numbers[j];
+					numbers[j] = numbers[j + 1];
+					numbers[j + 1] = temp;
+				}
+			}
+		}
+		System.out.println();
+		System.out.println("排序之后：");
+		for (int i = 0; i &lt; numbers.length; i++) {
+			System.out.print(numbers[i] + " ");
+		}
+		
+	}
+	
+}</pre>
+<br>
+<br>
+<br>分析
+<br>&nbsp;&nbsp; 冒泡排序是一种稳定的排序方法。　
+<br>
+<br>&nbsp;&nbsp; •若文件初状为正序，则一趟起泡就可完成排序，排序码的比较次数为n-1，且没有记录移动，时间复杂度是O(n)
+<br>&nbsp; •若文件初态为逆序，则需要n-1趟起泡，每趟进行n-i次排序码的比较，且每次比较都移动三次，比较和移动次数均达到最大值∶O(n2)
+<br>&nbsp; •起泡排序平均时间复杂度为O(n2)
+  </div>
+
+  
+  <div class="attachments">
+    
+      
+        <ul style="display:none;">
+          <li><a href="http://dl2.iteye.com/upload/attachment/0113/0205/7e345e52-bceb-36a4-8b98-10043a814d40.png" target="_blank"><img src="http://dl2.iteye.com/upload/attachment/0113/0205/7e345e52-bceb-36a4-8b98-10043a814d40-thumb.png" class="magplus" title="点击查看原始大小图片"></a></li>
+          
+          <li>大小: 46.8 KB</li>
+        </ul>
+      
+    
+    
+      <ul>
+        <li><a href="#" onclick="$$('div.attachments ul').invoke('show');$(this).up(1).hide();return false;">查看图片附件</a></li>
+      </ul>
+    
+  </div>
+
+
+  
+  
+  <iframe src="/iframe_ggbd/187" scrolling="no" frameborder="0" height="60" width="468"></iframe>
+  
+  <div id="bottoms" class="clearfix">
+    <div id="digg_bottom" class="clearfix"><a href="#" onclick="digg(&quot;blogs&quot;, 2256287, false);return false;"><div><strong>0</strong> <br>顶</div></a><a href="#" onclick="digg(&quot;blogs&quot;, 2256287, true);return false;"><div><strong>0</strong> <br>踩</div></a></div>
+    <div id="share_weibo">分享到：
+      <a data-type="sina" href="javascript:;" title="分享到新浪微博"><img src="/images/sina.jpg"></a>
+      <a data-type="qq" href="javascript:;" title="分享到腾讯微博"><img src="/images/tec.jpg"></a>
+    </div>
+  </div>
+
+  <div class="blog_nav">
+    <div class="pre_next">
+      
+      
+      <a href="/blog/2256083" class="pre" title="直接插入排序算法分析与实现">直接插入排序算法分析与实现</a>
+    </div>
+  </div>
+  <div class="blog_bottom">
+    <ul>
+      <li>11 小时前</li>
+      <li>浏览 112</li>
+      <li><a href="#comments">评论(1)</a></li>
+      
+      
+        <li><a href="/admin/link?user_favorite%5Btitle%5D=%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%B8%8E%E5%88%86%E6%9E%90&amp;user_favorite%5Burl%5D=http%3A%2F%2Fleihongtai2010.iteye.com%2Fblog%2F2256287" target="_blank" class="favorite" onclick="$$('.favorite_form_spinner')[0].show();new Ajax.Request('/admin/link/new_xhr?user_favorite%5Btitle%5D=%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%B8%8E%E5%88%86%E6%9E%90&amp;user_favorite%5Burl%5D=http%3A%2F%2Fleihongtai2010.iteye.com%2Fblog%2F2256287', {method: 'get', onSuccess: function(response){$(document.getElementsByTagName('body')[0]).insert({bottom:response.responseText});$$('.favorite_form_spinner')[0].hide();}});return false;">收藏</a><img alt="Spinner" class="favorite_form_spinner" src="http://www.iteye.com/images/spinner.gif?1324994303" style="vertical-align:bottom;margin-left:7px;display:none;"></li>
+      
+      <li>分类:<a href="http://www.iteye.com/blogs/category/language">编程语言</a></li>      
+      <li class="last"><a href="http://www.iteye.com/wiki/blog/2256287" target="_blank" class="more">相关推荐</a></li>
+    </ul>
+  </div>
+
+  <div class="blog_comment">
+    <h5>评论</h5>
+    <a id="comments" name="comments"></a>
+    <div id="bc2381436">
+  <div class="comment_title">
+    1 楼
+    <a href="http://somefuture.iteye.com" target="_blank" title="somefuture">somefuture</a>
+    40 分钟前&nbsp;&nbsp;
+    <a href="#" onclick="quote_comment(2381436);return false;">引用</a>
+    
+  </div>
+  <div class="comment_content">文件初状为正序，则一趟起泡就可完成排序，排序码的比较次数为n-1，且没有记录移动。<br><br>的确是这样，不过你写的算法似乎没有标志位，不能实现这个功能，即使已经完成排序，仍然需要比较到最后</div>
+</div>
+
+
+    
+    
+  </div>
+
+  <div class="blog_comment">
+    <h5>发表评论</h5>
+            <form action="/blog/2256287" id="comment_form" method="post" onsubmit="return false;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" value="C4cvhO4+b041LH+bWrLISlKA1ndKSxR1OLlVkbuhUUM=" type="hidden"></div>          
+
+
+  <input value="true" id="editor_bbcode_flag" type="hidden">
+
+
+
+<div id="editor_main"><div class="clearfix" id="editor_wrapper"><div id="bbcode_emotions"><h5>表情图标</h5><img src="http://www.iteye.com/images/smiles/icon_biggrin.gif"><img src="http://www.iteye.com/images/smiles/icon_smile.gif"><img src="http://www.iteye.com/images/smiles/icon_sad.gif"><img src="http://www.iteye.com/images/smiles/icon_surprised.gif"><img src="http://www.iteye.com/images/smiles/icon_eek.gif"><img src="http://www.iteye.com/images/smiles/icon_confused.gif"><img src="http://www.iteye.com/images/smiles/icon_cool.gif"><img src="http://www.iteye.com/images/smiles/icon_lol.gif"><img src="http://www.iteye.com/images/smiles/icon_mad.gif"><img src="http://www.iteye.com/images/smiles/icon_razz.gif"><img src="http://www.iteye.com/images/smiles/icon_redface.gif"><img src="http://www.iteye.com/images/smiles/icon_cry.gif"><img src="http://www.iteye.com/images/smiles/icon_evil.gif"><img src="http://www.iteye.com/images/smiles/icon_twisted.gif"><img src="http://www.iteye.com/images/smiles/icon_rolleyes.gif"><img src="http://www.iteye.com/images/smiles/icon_wink.gif"><img src="http://www.iteye.com/images/smiles/icon_exclaim.gif"><img src="http://www.iteye.com/images/smiles/icon_question.gif"><img src="http://www.iteye.com/images/smiles/icon_idea.gif"><img src="http://www.iteye.com/images/smiles/icon_arrow.gif"></div><div id="bbcode_controllers"><div id="bbcode_toolbar"><input id="button_bold" value="B" type="button"><input id="button_italic" value="I" type="button"><input id="button_underline" value="U" type="button"><input value="Quote" type="button"><input value="Code" type="button"><input value="List" type="button"><input value="Img" type="button"><input value="URL" type="button"><input value="Flash" type="button"><input value="Table" type="button"><br>字体颜色: <select id="select_color"><option value="black" style="color: black;">标准</option><option value="darkred" style="color: darkred;">深红</option><option value="red" style="color: red;">红色</option><option value="orange" style="color: orange;">橙色</option><option value="brown" style="color: brown;">棕色</option><option value="yellow" style="color: yellow;">黄色</option><option value="green" style="color: green;">绿色</option><option value="olive" style="color: olive;">橄榄</option><option value="cyan" style="color: cyan;">青色</option><option value="blue" style="color: blue;">蓝色</option><option value="darkblue" style="color: darkblue;">深蓝</option><option value="indigo" style="color: indigo;">靛蓝</option><option value="violet" style="color: violet;">紫色</option><option value="gray" style="color: gray;">灰色</option><option value="white" style="color: white;">白色</option><option value="black" style="color: black;">黑色</option></select>&nbsp;字体大小: <select id="select_font"><option value="0">标准</option><option value="xx-small">1 (xx-small)</option><option value="x-small">2 (x-small)</option><option value="small">3 (small)</option><option value="medium">4 (medium)</option><option value="large">5 (large)</option><option value="x-large">6 (x-large)</option><option value="xx-large">7 (xx-large)</option></select>&nbsp;对齐: <select id="select_align"><option value="0">标准</option><option value="left">居左</option><option value="center">居中</option><option value="right">居右</option></select></div><div id="bbcode_tooltip">提示：选择您需要装饰的文字, 按上列按钮即可添加上相应的标签</div><textarea class="validate-richeditor bad-words min-length-5" cols="40" id="editor_body" name="comment[body]" rows="20" style="width: 500px; height: 350px;"></textarea></div></div></div>
+
+
+<script type="text/javascript">
+  var editor = new Control.TextArea.Editor("editor_body", "bbcode", false);
+</script>
+
+          <p style="text-align:right;margin-right:30px;">(快捷键 Alt+S / Ctrl+Enter) <input class="submit" id="quick_reply_button" name="commit" value="提交" type="submit"></p>
+       </form>
+        <script type="text/javascript">
+          new HotKey("s",function() {$('quick_reply_button').click();},{altKey: true, ctrlKey: false});
+          new HotKey(new Number(13),function() {$('quick_reply_button').click();},{altKey: false, ctrlKey: true});
+
+          new Validation("comment_form", {immediate: false, onFormValidate: function(result, form){
+            if(result) {
+              new Ajax.Request('/blog/create_comment/2256287', {
+                onFailure:function(response){
+                  $('comments').insert({after:response.responseText})
+                  form.spinner.hide();
+                  Element.scrollTo($('comments'));
+                },
+                onSuccess:function(response){
+                  Element.scrollTo($('comments'));
+                  var new_comment = new Element('div', {}).update(response.responseText).firstChild;
+                  var comment_id = new_comment.readAttribute('id');
+
+                  $('comments').insert({after:response.responseText});
+                  $('editor_body').value = "";
+
+                  var css_rules = '#' + comment_id + ' pre';
+                  highlightNewAddContent(css_rules);
+                  processComment();
+                  code_favorites_init(css_rules);
+                  
+                  form.spinner.hide();
+                }, parameters:Form.serialize(form)
+              });
+            }
+        }});
+        </script>
+        </div>
+</div>
+
+
+<script type="text/javascript">
+  dp.SyntaxHighlighter.HighlightAll('code', true, true);
+
+  $$('#main .blog_content pre[name=code]').each(function(pre, index){ // blog content
+    var post_id = 2256287;
+    var location = window.location;
+    source_url = location.protocol + "//" + location.host + location.pathname + location.search;
+    pre.writeAttribute('codeable_id', post_id);
+    pre.writeAttribute('codeable_type', "Blog");
+    pre.writeAttribute('source_url', source_url);
+    pre.writeAttribute('pre_index', index);
+    pre.writeAttribute('title', '冒泡排序算法实现与分析');
+  });
+
+  fix_image_size($$('div.blog_content img'), 700);
+
+  function processComment() {
+    $$('#main .blog_comment > div').each(function(comment){// comment
+      var post_id = comment.id.substr(2);
+      $$("#"+comment.id+" pre[name=code]").each(function(pre, index){
+        var location = window.location;
+        source_url = location.protocol + "//" + location.host + location.pathname + location.search;
+        source_url += "#" + comment.id;
+        pre.writeAttribute('codeable_id', post_id);
+        pre.writeAttribute('codeable_type', "BlogComment");
+        pre.writeAttribute('source_url', source_url);
+        pre.writeAttribute('pre_index', index);
+        pre.writeAttribute('title', '冒泡排序算法实现与分析');
+      });
+    });
+  }
+
+  function quote_comment(id) {
+    new Ajax.Request('/editor/quote', {
+      parameters: {'id':id, 'type':'BlogComment'},
+      onSuccess:function(response){editor.bbcode_editor.textarea.insertAfterSelection(response.responseText);
+        Element.scrollTo(editor.bbcode_editor.textarea.element);}
+    });
+  }
+
+  code_favorites_init();
+  processComment();
+  new WeiboShare({share_buttons: $('share_weibo'), img_scope: $('blog_content')});
+</script>
+
+
+
+
+        </div>
+
+        <div id="local">
+          <div class="local_top"></div>
+          <div id="blog_owner">
+  <div id="blog_owner_logo"><a href="http://leihongtai2010.iteye.com"><img alt="leihongtai2010的博客" class="logo" src="http://www.iteye.com/images/user-logo.gif?1324994303" title="leihongtai2010的博客: " width=""></a></div>
+  <div id="blog_owner_name">leihongtai2010</div>
+</div>
+
+          <div id="blog_actions">
+            <ul>
+              <li>浏览: 728 次</li>
+              <li>性别: <img alt="Icon_minigender_1" src="http://www.iteye.com/images/icon_minigender_1.gif?1324994303" title="男"></li>
+              <li>来自: 成都</li>
+              <li><img src="/images/status/offline.gif"></li>
+              
+                <li>
+                  <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=leihongtai2010" class="message" title="发送站内短信">发短消息</a>
+                  
+                    <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=leihongtai2010" class="subscription" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'C4cvhO4+b041LH+bWrLISlKA1ndKSxR1OLlVkbuhUUM='); f.appendChild(s);f.submit();return false;">关注</a>
+                  
+                </li>
+              
+            </ul>
+          </div>
+          <div id="user_visits" class="clearfix">
+            <h5>最近访客 <span style="font-weight:normal;font-size:12px;padding-left:30px;"><a href="/blog/user_visits">更多访客&gt;&gt;</a></span></h5>
+            
+              <div class="user_visit">
+                <div class="logo"><a href="http://qiuyibo7777.iteye.com" target="_blank"><img alt="qiuyibo7777的博客" class="logo" src="http://www.iteye.com/images/user-logo-thumb.gif?1324994303" title="qiuyibo7777的博客: " width="48px"></a></div>
+                <div class="left"><a href="http://qiuyibo7777.iteye.com" target="_blank" title="qiuyibo7777">qiuyibo7777</a></div>
+              </div>
+            
+              <div class="user_visit">
+                <div class="logo"><a href="http://lilei-java.iteye.com" target="_blank"><img alt="lilei_java的博客" class="logo" src="http://www.iteye.com/images/user-logo-thumb.gif?1324994303" title="lilei_java的博客: " width="48px"></a></div>
+                <div class="left"><a href="http://lilei-java.iteye.com" target="_blank" title="lilei_java">lilei_java</a></div>
+              </div>
+            
+              <div class="user_visit">
+                <div class="logo"><a href="http://1016448606.iteye.com" target="_blank"><img alt="独孤求败benr的博客" class="logo" src="http://www.iteye.com/images/user-logo-thumb.gif?1324994303" title="独孤求败benr的博客: " width="48px"></a></div>
+                <div class="left"><a href="http://1016448606.iteye.com" target="_blank" title="独孤求败benr">独孤求败benr</a></div>
+              </div>
+            
+              <div class="user_visit">
+                <div class="logo"><a href="http://xenos-xia.iteye.com" target="_blank"><img alt="xenos_xia的博客" class="logo" src="http://www.iteye.com/images/user-logo-thumb.gif?1324994303" title="xenos_xia的博客: " width="48px"></a></div>
+                <div class="left"><a href="http://xenos-xia.iteye.com" target="_blank" title="xenos_xia">xenos_xia</a></div>
+              </div>
+            
+          </div>
+
+          
+
+                      <div id="blog_menu">
+              <h5>文章分类</h5>
+              <ul>
+                <li><a href="/">全部博客 (7)</a></li>
+                
+                  <li><a href="/category/348634">XML (2)</a></li>
+                
+                  <li><a href="/category/348668">java基础 (1)</a></li>
+                
+                  <li><a href="/category/349092">数据结构与算法 (4)</a></li>
+                
+              </ul>
+            </div>
+            <div id="month_blogs">
+              <h5>社区版块</h5>
+              <ul>
+                <li><a href="/blog/news">我的资讯</a> (0)</li>
+                <li>
+                  <a href="/blog/post">我的论坛</a> (0)
+                </li>
+                <li><a href="/blog/answered_problems">我的问答</a> (0)</li>
+              </ul>
+            </div>
+            <div id="month_blogs">
+              <h5>存档分类</h5>
+              <ul>
+                
+                  <li><a href="/blog/monthblog/2015-11">2015-11</a> (6)</li>
+                
+                  <li><a href="/blog/monthblog/2015-10">2015-10</a> (1)</li>
+                
+                <li><a href="/blog/monthblog_more">更多存档...</a></li>
+              </ul>
+            </div>
+            
+            
+              <div id="comments_top">
+                <h5>评论排行榜</h5>
+                <ul>
+                  
+                    <li><a href="/blog/2253659" title="java线程中典型的生产者与消费者模式">java线程中典型的生产者与消费者模式</a></li>
+                  
+                </ul>
+              </div>
+            
+
+            <div id="guest_books">
+              <h5>最新评论</h5>
+              <ul>
+                
+                <li>
+                  <a href="http://sql-861365880.iteye.com" target="_blank" title="sql_861365880">sql_861365880</a>： 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                  <a href="/blog/2253659#bc2381015">java线程中典型的生产者与消费者模式</a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="local_bottom"></div>
+          
+        </div>
+      </div>
+
+      <div id="footer" class="clearfix">
+        <div id="copyright">
+          <hr>
+          声明：ITeye文章版权属于作者，受法律保护。没有作者书面许可不得转载。若作者同意转载，必须以超链接形式标明文章原始出处和作者。<br>
+          © 2003-2015 ITeye.com.   All rights reserved.  [ 京ICP证110151号  京公网安备110105010620 ]
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+  document.write("<img src='http://stat.iteye.com/?url="+ encodeURIComponent(document.location.href) + "&referrer=" + encodeURIComponent(document.referrer) + "&user_id=1187699' width='0' height='0' />");
+</script><img src="http://stat.iteye.com/?url=http%3A%2F%2Fleihongtai2010.iteye.com%2Fblog%2F2256287&amp;referrer=http%3A%2F%2Fwww.iteye.com%2F&amp;user_id=1187699" height="0" width="0">
+
+<script src="http://csdnimg.cn/pubfooter/js/tracking.js?version=20130923164150" type="text/javascript"></script>
+
+    
+    
+  
+
